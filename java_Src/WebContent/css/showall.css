@@ -1,0 +1,37 @@
+ body{
+	overflow:-scroll;
+	overflow-x:hidden;
+}
+ .container{
+     width: 100%;
+     height:100%;
+     margin:0 auto;
+ }
+ .header{
+     width:100%;
+     height:10%;
+     background: orange;
+ }
+ .content_body{
+     position: relative;
+     width:100%;
+     height:90%;
+     background: olive;          
+ }
+ .left{
+     height:100%;
+     width:15%;
+     float: left;
+     background: orchid;
+     overflow:auto;
+ }
+ .right{
+     height:100%;
+     width:80%;
+     float: right;               
+     background:yellowgreen;
+ }
+ table{
+ 	border-collapse:separate;
+ 	border-spacing:10px;
+ }
