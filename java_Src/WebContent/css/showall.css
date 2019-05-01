@@ -1,6 +1,5 @@
  body{
-	overflow:-scroll;
-	overflow-x:hidden;
+	scroll="no"
 }
  .container{
      width: 100%;
@@ -9,29 +8,66 @@
  }
  .header{
      width:100%;
-     height:10%;
+     height:5%;
      background: orange;
+     position:fixed;
+     top:0px;
  }
+ /*搜索栏*/
+.search_box {
+	width:12.4%;
+	height:96%;
+	box-sizing:border-box;
+	box-shadow:1px 1px 4px #e2e2e2;
+	padding:0px;
+	border:1px solid #e2e2e2;
+	border-radius:4px;
+	background-color:#f5f5f5;
+	margin:0px;
+}
+.search_box input {
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	line-height:13px;
+	font-size:15px;
+	color:#8c8282;
+}
  .content_body{
+ 	 padding:0px;
+ 	 margin:0px;
      position: relative;
      width:100%;
-     height:90%;
+     height:95%;
      background: olive;          
  }
  .left{
+ 	 padding:0px;
+ 	 margin:0px;
      height:100%;
-     width:15%;
+     width:12.8%;
      float: left;
      background: orchid;
      overflow:auto;
+     border-top:1px solid #000;
+     position:fixed;
+     top:5%;
+     padding:0px;
  }
  .right{
+ 	 padding:0px;
+ 	 margin:0px;
      height:100%;
-     width:80%;
+     width:87%;
      float: right;               
      background:yellowgreen;
+     border-top:1px solid #000;
+     padding:0px;
+     overflow:auto;
+     border-top:1px solid #000;
+     position:fixed;
+     right:0;
+     top:5%;
  }
- table{
- 	border-collapse:separate;
- 	border-spacing:10px;
- }
+ 

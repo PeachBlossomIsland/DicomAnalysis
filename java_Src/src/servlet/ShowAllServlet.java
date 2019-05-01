@@ -21,7 +21,7 @@ public class ShowAllServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException
 	{
-		System.out.println("servlet");
+		System.out.println("servlet-Get");
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		String parameter=(String) request.getParameter("show");
@@ -37,14 +37,39 @@ public class ShowAllServlet extends HttpServlet {
 			for(int i=0;i<p_info.size();i++)
 			{
 				System.out.println(p_info.get(i).getPatientName());
-				p.add(p_info.get(i).getPatientName());
+				String pn=p_info.get(i).getPatientName();
+				//去重
+				if(!p.contains(pn))
+				{
+					System.out.println(pn);
+					p.add(pn);
+				}
 			}
 			System.out.println(JSONArray.fromObject(p).toString());
 			response.getWriter().write(JSONArray.fromObject(p).toString());
-		}else {
+		}else if(parameter.equals("del"))
+		{
+			String pid=(String) request.getParameter("patientid");
+			System.out.println("删除的id:"+pid);
+			String[] delSql= {"delete from patientinfo where id=?",pid};
+			if(d.doUpdate_Delete_Insert(delSql)>0) {
+				response.getWriter().write("删除成功!");
+			}else {
+				response.getWriter().write("删除失败!");
+			}
+		}
+	}
+	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException
+	{
+		System.out.println("servlet-post");
+		request.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("utf-8");
+		String parameter=(String) request.getParameter("show");
+		DoSql d=new DoSql();
+		if(parameter.equals("patientName")){
 			//获取一个完整的检查 的信息
-			System.out.println(parameter);
-			String patientName=parameter;
+			String patientName=(String) request.getParameter("patientName");
+			System.out.println(patientName);
 			String getPatientIdSql[]= {"select * from patientinfo where patientName=?",patientName};
 			ArrayList<PatientInfo> patientInfoByName=d.doSelect_PatientInfo(getPatientIdSql);
 			Integer patientSize=patientInfoByName.size();
@@ -82,6 +107,30 @@ public class ShowAllServlet extends HttpServlet {
 			response.getWriter().write(JSONArray.fromObject(reinfo).toString().toString());
 			response.getWriter().close();
 			System.out.println(JSONArray.fromObject(reinfo).toString().toString());
+		}else if(parameter.equals("save_new")){
+			String new_sex=(String) request.getParameter("new_sex");
+			String new_age=(String) request.getParameter("new_age");
+			String new_addr=(String) request.getParameter("new_addr");
+			String new_weight=(String) request.getParameter("new_weight");
+			String new_studyDes=(String) request.getParameter("new_studyDes");
+			String new_seriesDes=(String) request.getParameter("new_seriesDes");
+			String new_studyDate=(String) request.getParameter("new_studyDate");
+			String new_seriesDate=(String) request.getParameter("new_seriesDate");
+			String new_imageDate=(String) request.getParameter("new_imageDate");
+			String new_studyBody=(String) request.getParameter("new_studyBody");
+			String new_patientId=(String) request.getParameter("new_patientId");
+			String new_studyId=(String) request.getParameter("new_studyId");
+			String new_seriesId=(String) request.getParameter("new_seriesId");
+			System.out.println("new_patientId:"+new_patientId);
+			System.out.println("new_studyId:"+new_studyId);
+			System.out.println("new_seriesId:"+new_seriesId);
+			String[] updatePinfo= {"update patientinfo set patientAge=?,patientAddress=?,patientWeight=?,patientSex=? where id=?",new_age,new_addr,new_weight,new_sex,new_patientId};
+			String[] updateSinfo= {"update studyinfo set studyDate=?,studyBodyPart=?,studyDescription=? where id=?",new_studyDate,new_studyBody,new_studyDes,new_studyId};
+			String[] updateSeinfo= {"update seriesinfo set seriesDescription=?,seriesDate=? where id=?",new_seriesDes,new_seriesDate};
+			d.doUpdate_Delete_Insert(updateSeinfo);
+			d.doUpdate_Delete_Insert(updateSinfo);
+			d.doUpdate_Delete_Insert(updatePinfo);
+			response.getWriter().print("保存修改成功!");
 		}
 	}
 	public static void main(String[] args) {

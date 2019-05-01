@@ -287,9 +287,11 @@ public class DoSql {
 	public static void main(String[] args)
 	{
 		DoSql d=new DoSql();
-		String getStudyinfoSql[]= {"select * from studyinfo where patientId=?","252"};
-		ArrayList<StudyInfo> sinfo=d.doSelect_StudyInfo(getStudyinfoSql);
-		System.out.println(sinfo.get(0).getId());
+		String update[]= {"update patientinfo set patientName=? where id=?","zhujianghui","317"};
+		d.doUpdate_Delete_Insert(update);
+//		String getStudyinfoSql[]= {"select * from studyinfo where patientId=?","252"};
+//		ArrayList<StudyInfo> sinfo=d.doSelect_StudyInfo(getStudyinfoSql);
+//		System.out.println(sinfo.get(0).getId());
 		//String[] sql= {"insert into dcminfo values(?,?,?,?,?,?)",null,"12057","20100926","1.2.840.113619.2.55.3.2831193967.596.1285460208.411","1.2.840.113619.2.55.3.2831193967.596.1285460208.412.27","C:\\Users\\zhujianghui\\Pictures\\Camera Roll\\622424199610153719朱江辉.jpg"};
 		//d.doUpdate_Delete_Insert(sql);
 		//System.out.println(p.get(0).getPatientName());
