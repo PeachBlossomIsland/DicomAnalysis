@@ -1,4 +1,4 @@
-﻿// b2.cpp : 此文件包含 "main" 函数
+﻿//// b2.cpp : 此文件包含 "main" 函数
 #include "pch.h"
 //DcmTest文件的测试：
 #include <string>
@@ -41,10 +41,15 @@ static const string db = "b2";
 //存储图片的文件夹路径
 static const string dirpath = "C:/Users/zhujianghui/Downloads/dcm-images/";
 //存储接收到的dcm信息的文件夹路径
-static const OFString dir = "E:/DCM/";
+static const OFString dir = "C:/Users/zhujianghui/Downloads/接收后的DCM文件/";
+//源文件
+static const string sourcepath = "C:\\Users\\zhujianghui\\Downloads\\dcm文件\\";
 //共享队列的大小：
 static const unsigned int len = 5;
-
+/*
+从客户端和服务端协商来判断服务端是否支持服务端所声明的传输语法
+返回0表示不符合。
+*/
 static Uint8 findUncompressedPC(const OFString& sopClass,
 	DcmSCU& scu)
 {
@@ -76,7 +81,7 @@ int testScu(string filepath)
 	//cout << "testScu" << endl;
 	g_log->info("main testScu:进入函数");
 	DcmTestSCU  scu;
-	// set AE titles 
+	// 设置实体
 	scu.setAETitle(APPLICATIONTITLE.c_str());
 	scu.setPeerHostName(PEERHOSTNAME.c_str());
 	scu.setPeerPort(PEERPORT);
@@ -136,6 +141,7 @@ void testScp(SharedBuf& srb)
 {
 	g_log->info("main testScp:进入函数");
 	cout << "testScp" << endl;
+	//设置服务端实体名称和服务端的超时时间和阻塞模式
 	D_DcmStorageSCP mStoreSCP;
 	mStoreSCP.setAETitle(PEERAPPLICATIONTITLE.c_str());
 	mStoreSCP.setPort(PEERPORT);
@@ -143,15 +149,18 @@ void testScp(SharedBuf& srb)
 	mStoreSCP.setACSETimeout(ACSETimeout);
 	mStoreSCP.setDIMSETimeout(DIMSETimeout);
 	mStoreSCP.setDIMSEBlockingMode(DIMSE_NONBLOCKING);
+	//设置传输语法，主要是压缩算法的协商
 	OFList< OFString > transferSyntaxes;
 	transferSyntaxes.push_back(UID_LittleEndianExplicitTransferSyntax);
 	transferSyntaxes.push_back(UID_LittleEndianImplicitTransferSyntax);
 	transferSyntaxes.push_back(UID_BigEndianExplicitTransferSyntax);
 	mStoreSCP.addPresentationContext(UID_CTImageStorage, transferSyntaxes);
 	mStoreSCP.addPresentationContext(UID_MRImageStorage, transferSyntaxes);
+	//设置保存接收的数据的保存的文件的格式和路径
 	const OFString extension = ".dcm";
 	mStoreSCP.setFilenameExtension(extension);
 	mStoreSCP.setOutputDirectory(dir);
+	//进行监听
 	mStoreSCP.listen(srb);
 }
 void anasyDcmfile(SharedBuf& srb)
@@ -286,17 +295,36 @@ void anasyDcmfile(SharedBuf& srb)
 }
 int main(int argc, char* argv[])
 {
+	//日志记录的全局变量 g_log,等级为debug；此变量在global.h中已经定义了。
 	g_log->set_level(spdlog::level::debug);
+	/*
+	这是生产者-消费者模型中的共享内存；用于存储需要解析文件的绝对路径，使用了锁机制
+	在SharedBuf.h中进行了声明；此共享内存的长度有len指定
+	*/
 	SharedBuf srb;
 	srb.size = len;
+	//服务进程，用于接收网络的DICOM协议内容；并且保存成文件，并将文件的绝对路径写到了共享内存中
 	thread p(testScp, std::ref(srb));
-	thread c(testScu, "C:\\Users\\zhujianghui\\Downloads\\dcm文件\\126.DCM");
-	thread c1(testScu,"C:\\Users\\zhujianghui\\Downloads\\dcm文件\\121.DCM");
-	thread c2(testScu,"C:\\Users\\zhujianghui\\Downloads\\dcm文件\\125.DCM");
-	thread c3(testScu, "C:\\Users\\zhujianghui\\Downloads\\dcm文件\\111.DCM");
-	thread c4(testScu, "C:\\Users\\zhujianghui\\Downloads\\dcm文件\\120.DCM");
-	thread c5(testScu, "C:\\Users\\zhujianghui\\Downloads\\dcm文件\\124.DCM");
-
+	//模拟的客户端连接
+	thread c(testScu, sourcepath+"118.DCM");
+	thread c1(testScu, sourcepath + "119.DCM");
+	thread c2(testScu, sourcepath + "120.DCM");
+	thread c3(testScu, sourcepath + "121.DCM");
+	thread c4(testScu, sourcepath + "124.DCM");
+	thread c5(testScu, sourcepath + "125.DCM");
+	thread c6(testScu, sourcepath + "126.DCM");
+	thread c7(testScu, sourcepath + "230.DCM");
+	thread c8(testScu, sourcepath + "231.DCM");
+	thread c9(testScu, sourcepath + "291.DCM");
+	thread c10(testScu, sourcepath + "292.DCM");
+	thread c11(testScu, sourcepath + "293.DCM");
+	thread c12(testScu, sourcepath + "294.DCM");
+	thread c13(testScu, sourcepath + "295.DCM");
+	thread c14(testScu, sourcepath + "296.DCM");
+	thread c15(testScu, sourcepath + "297.DCM");
+	thread c16(testScu, sourcepath + "298.DCM");
+	thread c17(testScu, sourcepath + "299.DCM");
+	//生产者-消费者模式中的消费者的角色；专门用于解析DCM文件；文件的路径是在共享内存中读取出来。
 	thread a(anasyDcmfile, std::ref(srb));
 	c1.join();
 	c2.join();
@@ -308,3 +336,80 @@ int main(int argc, char* argv[])
 	a.join();
 	return 0;
 }
+
+
+
+//WT框架的测试：
+//#include "database.h"
+//#include "MysqlResToT.h"
+//#include <Wt/WApplication.h>
+//#include <Wt/WBreak.h>
+//#include <Wt/WContainerWidget.h>
+//#include <Wt/WLineEdit.h>
+//#include <Wt/WPushButton.h>
+//#include <Wt/WText.h>
+//#include <Wt/WContainerWidget.h>
+//#include <Wt/WFileUpload.h>
+//#include <Wt/WProgressBar.h>
+//#include <Wt/WPushButton.h>
+//
+//
+//class HelloApplication : public Wt::WApplication
+//{
+//	public:
+//	HelloApplication(const Wt::WEnvironment& env);
+//};
+////
+//HelloApplication::HelloApplication(const Wt::WEnvironment& env): Wt::WApplication(env)
+//{
+//	setTitle("文件上传");
+//	auto container = root()->addWidget(Wt::cpp14::make_unique<Wt::WContainerWidget>());
+//	Wt::WFileUpload *fu = container->addWidget(Wt::cpp14::make_unique<Wt::WFileUpload>());
+//	fu->setFileTextSize(10000); // Set the maximum file size to 10000 kB.
+//	fu->setProgressBar(Wt::cpp14::make_unique<Wt::WProgressBar>());
+//	fu->setMargin(10, Wt::Side::Right);
+//	cout << "设置的大小：" << endl;
+//	cout<<fu->fileTextSize() << endl;
+//	// Provide a button to start uploading.
+//	Wt::WPushButton *uploadButton =
+//		container->addWidget(Wt::cpp14::make_unique<Wt::WPushButton>("Send"));
+//	uploadButton->setMargin(10, Wt::Side::Left | Wt::Side::Right);
+//
+//	Wt::WText *out = container->addWidget(Wt::cpp14::make_unique<Wt::WText>());
+//		
+//	// Upload automatically when the user entered a file.
+//	fu->changed().connect([=] {
+//		fu->upload();
+//		uploadButton->disable();
+//		out->setText("File upload is changed.");
+//	});
+//
+//	// React to a succesfull upload.
+//	fu->uploaded().connect([=] {
+//		out->setText("File upload is finished.");
+//		cout << "文件名:" << endl;
+//		cout<<fu->clientFileName();
+//		cout << "文件大小：" << endl;
+//		cout << fu->fileTextSize() << endl;
+//		
+//			
+//	});
+//	fu->dataReceived().connect([=] {
+//		cout << "文件上传成功了" << endl;
+//		
+//	});
+//	// React to a file upload problem.
+//	fu->fileTooLarge().connect([=] {
+//		out->setText("File is too large.");
+//	});
+//
+//}
+//int main(int argc, char **argv)
+//{
+//	int num = 7;
+//	//强制的类型转化；
+//	char *pr[7] = {const_cast<char*>("b2.exe"),const_cast<char*>("--docroot"),const_cast<char*>("."),const_cast<char*>("--http-address"),const_cast<char*>("0.0.0.0"),const_cast<char*>("--http-port"),const_cast<char*>("9090")};
+//	return Wt::WRun(num, pr, [](const Wt::WEnvironment& env) {
+//		return std::make_unique<HelloApplication>(env);
+//	});
+//}
