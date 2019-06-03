@@ -1,0 +1,13 @@
+E:/spdlog/spdlog-master-build/CMakeFiles/NightlyMemoryCheck.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/Experimental.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/spdlog_headers_for_ide.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/Continuous.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/Nightly.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/INSTALL.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/RUN_TESTS.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/ALL_BUILD.dir
+E:/spdlog/spdlog-master-build/CMakeFiles/ZERO_CHECK.dir
+E:/spdlog/spdlog-master-build/tests/CMakeFiles/spdlog-utests.dir
+E:/spdlog/spdlog-master-build/tests/CMakeFiles/INSTALL.dir
+E:/spdlog/spdlog-master-build/tests/CMakeFiles/RUN_TESTS.dir
+E:/spdlog/spdlog-master-build/tests/CMakeFiles/ALL_BUILD.dir

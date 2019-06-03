@@ -1,0 +1,28 @@
+﻿  Building Custom Rule E:/spdlog/spdlog-master/tests/CMakeLists.txt
+  CMake does not need to re-run because E:/spdlog/spdlog-master-build/tests/CMakeFiles/generate.stamp is up-to-date.
+  errors.cpp
+  file_helper.cpp
+  file_log.cpp
+  test_misc.cpp
+  test_pattern_formatter.cpp
+  test_async.cpp
+  registry.cpp
+  test_macros.cpp
+  utils.cpp
+  main.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(2583): warning C4244: “参数”: 从“_Diff”转换到“int”，可能丢失数据
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(2607): note: 参见对正在编译的函数 模板 实例化“void std::_Random_shuffle1<_RanIt,Catch::TestRegistry::RandomNumberGenerator>(_RanIt,_RanIt,_RngFn &)”的引用
+          with
+          [
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Catch::TestCase>>>,
+              _RngFn=Catch::TestRegistry::RandomNumberGenerator
+          ]
+  e:\spdlog\spdlog-master\tests\catch.hpp(5796): note: 参见对正在编译的函数 模板 实例化“void std::random_shuffle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,Catch::TestRegistry::RandomNumberGenerator&>(_RanIt,_RanIt,_RngFn)”的引用
+          with
+          [
+              _Ty=Catch::TestCase,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Catch::TestCase>>>,
+              _RngFn=Catch::TestRegistry::RandomNumberGenerator &
+          ]
+  正在生成代码...
+  spdlog-utests.vcxproj -> E:\spdlog\spdlog-master-build\tests\Debug\spdlog-utests.exe

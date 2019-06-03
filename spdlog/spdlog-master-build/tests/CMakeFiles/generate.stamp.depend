@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/cmake/share/cmake-3.12/Modules/CheckIncludeFileCXX.cmake
+D:/cmake/share/cmake-3.12/Modules/CheckLibraryExists.cmake
+D:/cmake/share/cmake-3.12/Modules/CheckSymbolExists.cmake
+D:/cmake/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake
+D:/cmake/share/cmake-3.12/Modules/FindPackageMessage.cmake
+D:/cmake/share/cmake-3.12/Modules/FindThreads.cmake
+E:/spdlog/spdlog-master/tests/CMakeLists.txt

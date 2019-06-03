@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F3EAB20-689D-3CFC-AEED-F848248516C6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>spdlog_headers_for_ide</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\spdlog\spdlog-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/spdlog/spdlog-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake\bin\cmake.exe -HE:/spdlog/spdlog-master -BE:/spdlog/spdlog-master-build --check-stamp-file E:/spdlog/spdlog-master-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/spdlog/spdlog-master/CMakeLists.txt;D:\cmake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\cmake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeDependentOption.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.12\Modules\CTest.cmake;D:\cmake\share\cmake-3.12\Modules\CTestTargets.cmake;D:\cmake\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\cmake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\cmake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeSystem.cmake;E:\spdlog\spdlog-master\CMakeLists.txt;E:\spdlog\spdlog-master\cmake\spdlog.pc.in;E:\spdlog\spdlog-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\spdlog\spdlog-master-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/spdlog/spdlog-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake\bin\cmake.exe -HE:/spdlog/spdlog-master -BE:/spdlog/spdlog-master-build --check-stamp-file E:/spdlog/spdlog-master-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/spdlog/spdlog-master/CMakeLists.txt;D:\cmake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\cmake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeDependentOption.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.12\Modules\CTest.cmake;D:\cmake\share\cmake-3.12\Modules\CTestTargets.cmake;D:\cmake\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\cmake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\cmake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeSystem.cmake;E:\spdlog\spdlog-master\CMakeLists.txt;E:\spdlog\spdlog-master\cmake\spdlog.pc.in;E:\spdlog\spdlog-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\spdlog\spdlog-master-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/spdlog/spdlog-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake\bin\cmake.exe -HE:/spdlog/spdlog-master -BE:/spdlog/spdlog-master-build --check-stamp-file E:/spdlog/spdlog-master-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/spdlog/spdlog-master/CMakeLists.txt;D:\cmake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\cmake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeDependentOption.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.12\Modules\CTest.cmake;D:\cmake\share\cmake-3.12\Modules\CTestTargets.cmake;D:\cmake\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\cmake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\cmake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeSystem.cmake;E:\spdlog\spdlog-master\CMakeLists.txt;E:\spdlog\spdlog-master\cmake\spdlog.pc.in;E:\spdlog\spdlog-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\spdlog\spdlog-master-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/spdlog/spdlog-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake\bin\cmake.exe -HE:/spdlog/spdlog-master -BE:/spdlog/spdlog-master-build --check-stamp-file E:/spdlog/spdlog-master-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/spdlog/spdlog-master/CMakeLists.txt;D:\cmake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\cmake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeDependentOption.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake\share\cmake-3.12\Modules\CTest.cmake;D:\cmake\share\cmake-3.12\Modules\CTestTargets.cmake;D:\cmake\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\cmake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\cmake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\cmake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CMakeSystem.cmake;E:\spdlog\spdlog-master\CMakeLists.txt;E:\spdlog\spdlog-master\cmake\spdlog.pc.in;E:\spdlog\spdlog-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\spdlog\spdlog-master-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\async.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\async_logger.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\common.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\contrib\sinks\step_file_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\async_log_helper.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\async_logger_impl.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\file_helper.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\log_msg.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\logger_impl.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\mpmc_blocking_q.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\null_mutex.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\os.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\pattern_formatter_impl.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\registry.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\details\spdlog_impl.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\bundled\format.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\bundled\ostream.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\bundled\posix.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\bundled\printf.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\bundled\time.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\fmt.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\fmt\ostr.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\formatter.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\logger.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\android_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\ansicolor_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\base_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\dist_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\file_sinks.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\msvc_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\null_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\ostream_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\stdout_sinks.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\syslog_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\wincolor_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\sinks\windebug_sink.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\spdlog.h" />
+    <None Include="E:\spdlog\spdlog-master\include\spdlog\tweakme.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\spdlog\spdlog-master-build\ZERO_CHECK.vcxproj">
+      <Project>{DCA33B67-7A9D-3F0E-86A7-DA2F65110638}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

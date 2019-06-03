@@ -1,0 +1,218 @@
+The system is: Windows - 10.0.16299 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+���� .NET Framework �� Microsoft (R) ��������汾 15.9.21+g9802d43bc3
+��Ȩ����(C) Microsoft Corporation����������Ȩ����
+
+��������ʱ��Ϊ 2019/4/1 16:39:08��
+�ڵ� 1 �ϵ���Ŀ��E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)��
+PrepareForBuild:
+  ���ڴ���Ŀ¼��Debug\����
+  ���ڴ���Ŀ¼��Debug\CompilerIdCXX.tlog\����
+InitializeBuildStatus:
+  ���ڴ�����Debug\CompilerIdCXX.tlog\unsuccessfulbuild������Ϊ��ָ����AlwaysCreate����
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  ����ɾ���ļ���Debug\CompilerIdCXX.tlog\unsuccessfulbuild����
+  ���ڶԡ�Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate��ִ�� Touch ����
+�����������Ŀ��E:\spdlog\spdlog-master-build\CMakeFiles\3.12.4\CompilerIdCXX\CompilerIdCXX.vcxproj��(Ĭ��Ŀ��)�Ĳ�����
+
+�ѳɹ����ɡ�
+    0 ������
+    0 ������
+
+����ʱ�� 00:00:06.18
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "E:/spdlog/spdlog-master-build/CMakeFiles/3.12.4/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ddb81.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2019/4/1 16:39:15。
+节点 1 上的项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_ddb81.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_ddb81.dir\Debug\”。
+  正在创建目录“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_ddb81.dir\Debug\cmTC_ddb81.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_ddb81.dir\Debug\cmTC_ddb81.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ddb81.dir\Debug\\" /Fd"cmTC_ddb81.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27027.1 版
+  testCXXCompiler.cxx
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ddb81.dir\Debug\\" /Fd"cmTC_ddb81.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_ddb81.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\zlib\zlib-debug\lib" /LIBPATH:"E:\wt\Wt 4.0.5 msvs2015 x64\lib" /LIBPATH:"E:\boost\boost_1_67_0\lib64-msvc-9.0" /LIBPATH:D:\mysql\mysql\lib /LIBPATH:"E:\dcmtk\dcmtk-3.6.4-install\DEBUG\lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_ddb81.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_ddb81.lib" /MACHINE:X64  /machine:x64 cmTC_ddb81.dir\Debug\testCXXCompiler.obj
+  cmTC_ddb81.vcxproj -> E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_ddb81.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTC_ddb81.dir\Debug\cmTC_ddb81.tlog\unsuccessfulbuild”。
+  正在对“cmTC_ddb81.dir\Debug\cmTC_ddb81.tlog\cmTC_ddb81.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_ddb81.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:03.94
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_375db.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2019/4/1 16:39:19。
+节点 1 上的项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_375db.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_375db.dir\Debug\”。
+  正在创建目录“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_375db.dir\Debug\cmTC_375db.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_375db.dir\Debug\cmTC_375db.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_375db.dir\Debug\\" /Fd"cmTC_375db.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "D:\cmake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27027.1 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_375db.dir\Debug\\" /Fd"cmTC_375db.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "D:\cmake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_375db.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\zlib\zlib-debug\lib" /LIBPATH:"E:\wt\Wt 4.0.5 msvs2015 x64\lib" /LIBPATH:"E:\boost\boost_1_67_0\lib64-msvc-9.0" /LIBPATH:D:\mysql\mysql\lib /LIBPATH:"E:\dcmtk\dcmtk-3.6.4-install\DEBUG\lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_375db.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_375db.lib" /MACHINE:X64  /machine:x64 cmTC_375db.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_375db.vcxproj -> E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_375db.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTC_375db.dir\Debug\cmTC_375db.tlog\unsuccessfulbuild”。
+  正在对“cmTC_375db.dir\Debug\cmTC_375db.tlog\cmTC_375db.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_375db.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.33
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_70dbe.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2019/4/1 16:39:20。
+节点 1 上的项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_70dbe.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_70dbe.dir\Debug\”。
+  正在创建目录“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_70dbe.dir\Debug\cmTC_70dbe.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_70dbe.dir\Debug\cmTC_70dbe.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_70dbe.dir\Debug\\" /Fd"cmTC_70dbe.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "E:\spdlog\spdlog-master-build\CMakeFiles\feature_tests.cxx"
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.16.27027.1 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D WIN32 /D HPDF_DLL /D _SCL_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_70dbe.dir\Debug\\" /Fd"cmTC_70dbe.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "E:\spdlog\spdlog-master-build\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_70dbe.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\zlib\zlib-debug\lib" /LIBPATH:"E:\wt\Wt 4.0.5 msvs2015 x64\lib" /LIBPATH:"E:\boost\boost_1_67_0\lib64-msvc-9.0" /LIBPATH:D:\mysql\mysql\lib /LIBPATH:"E:\dcmtk\dcmtk-3.6.4-install\DEBUG\lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_70dbe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/spdlog/spdlog-master-build/CMakeFiles/CMakeTmp/Debug/cmTC_70dbe.lib" /MACHINE:X64  /machine:x64 cmTC_70dbe.dir\Debug\feature_tests.obj
+  cmTC_70dbe.vcxproj -> E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\Debug\cmTC_70dbe.exe
+FinalizeBuildStatus:
+  正在删除文件“cmTC_70dbe.dir\Debug\cmTC_70dbe.tlog\unsuccessfulbuild”。
+  正在对“cmTC_70dbe.dir\Debug\cmTC_70dbe.tlog\cmTC_70dbe.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\spdlog\spdlog-master-build\CMakeFiles\CMakeTmp\cmTC_70dbe.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.29
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
